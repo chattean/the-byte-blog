@@ -15,7 +15,7 @@ app.use(express.static("public"));
 const exphbs = require('express-handlebars');
 const hbs = exphbs.create({});
 
-//setting up sessions
+//setting up login sessions
 const session = require('express-session');
 
 const SequelizeStore = require('connect-session-sequelize')(session.Store);

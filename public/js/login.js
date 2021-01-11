@@ -1,6 +1,8 @@
 const loginForm = document.querySelector("#login-form");
 const signUpForm = document.querySelector("#signup-form");
 
+//Sign up form after submiting
+
  signUpForm.addEventListener("submit",async (event) => {
     event.preventDefault()
     const input = {
@@ -22,6 +24,7 @@ const signUpForm = document.querySelector("#signup-form");
     console.log({user})
  })
 
+ // Login form after submitting
  loginForm.addEventListener("submit",async (event) => {
     event.preventDefault()
     const input = {
@@ -39,5 +42,4 @@ const signUpForm = document.querySelector("#signup-form");
         body: JSON.stringify(input)
     })
     const user = await res.json();
-
- })``
+ })

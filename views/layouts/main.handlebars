@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Byte Blog</title>
+
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
@@ -14,6 +15,10 @@
       <h1>
         <a href="/">The Byte Blog</a>
       </h1>
+      <nav>
+        <button id="logout" class="btn-no-style">logout</button>
+        <a href="/login">login</a>
+      </nav>
     </header>
     <main>
       {{{ body }}}
@@ -23,6 +28,7 @@
     </footer>
   </div>
 
+  <script src="/js/logout.js"></script>
 </body>
 
 </html>
