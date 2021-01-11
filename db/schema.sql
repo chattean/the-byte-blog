@@ -1,4 +1,3 @@
-DROP DATABASE IF EXISTS byte-blog-db
+DROP DATABASE IF EXISTS  byte_blog_db;
 
-CREATE DATABASE byte-blog-db
-
+CREATE DATABASE  byte_blog_db;
