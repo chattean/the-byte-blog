@@ -100,6 +100,7 @@ router.post('/', (req, res) => {
       });
     });
   });
+  
   // Logout Functionality
   router.post('/logout', (req, res) => {
     if (req.session.loggedIn) {

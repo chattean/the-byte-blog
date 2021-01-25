@@ -20,6 +20,7 @@ const session = require('express-session');
 
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
+// creating a Session instance
 const sess = {
   secret: process.env.SESSION_SECRET,
   cookie: {},
@@ -38,8 +39,6 @@ app.set('view engine', 'handlebars');
 
 // turn on routes
 app.use(routes);
-
-
 
 // turn on connection to db and server
 sequelize.sync({ force: false }).then(() => {

@@ -22,6 +22,7 @@ const signUpForm = document.querySelector("#signup-form");
     })
     const user = await res.json();
     console.log({user})
+    
  })
 
  // Login form after submitting
