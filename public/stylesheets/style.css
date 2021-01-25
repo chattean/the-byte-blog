@@ -118,8 +118,9 @@
   }
   
   .post {
-    margin-bottom: 2%;
+    margin-bottom: 5%;
     line-height: 150%;
+    border:4em;
   }
   
   .post .title span {
@@ -132,14 +133,9 @@
     display: block;
     margin: -1.5% 0 2% 0;
   }
-  
-  .upvote-btn {
-    background-color: #197d0f;
-    transition: background-color .1s;
-  }
-  
-  .upvote-btn:hover {
-    background-color: #1f9c13;
+  .content{
+    padding:5%;
+    margin-bottom: 2%;
   }
   
   .comment-form {
