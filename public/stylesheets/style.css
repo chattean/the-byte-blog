@@ -120,7 +120,8 @@
   .post {
     margin-bottom: 5%;
     line-height: 150%;
-    border:4em;
+    justify-content: center;
+    text-align: justify;
   }
   
   .post .title span {
