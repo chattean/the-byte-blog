@@ -74,12 +74,11 @@ router.get('/:id', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-  // expects {title: 'Taskmaster goes public!', post_url: 'https://taskmaster.com/press', user_id: 1}
   Post.create({
     title: req.body.title,
-    post_url: req.body.content,
-    user_id: req.body.user_id
-  })
+    content: req.body.post_content,
+    user_id: req.session.user_id
+    })
     .then(dbPostData => res.json(dbPostData))
     .catch(err => {
       console.log(err);
@@ -91,7 +90,7 @@ router.put('/:id', (req, res) => {
   Post.update(
     {
       title: req.body.title,
-      // content: req.ba
+      content: req.body.post_content,
     },
     {
       where: {

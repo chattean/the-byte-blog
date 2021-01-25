@@ -39,6 +39,7 @@
   .post-list {
     margin: 0;
     padding: 0;
+    list-style-type: none;
   }
   
   textarea, input {
@@ -122,6 +123,8 @@
     line-height: 150%;
     justify-content: center;
     text-align: justify;
+    border: 5px solid #bbbaba; 
+    padding: 1%;
   }
   
   .post .title span {
@@ -138,6 +141,14 @@
     padding:5%;
     margin-bottom: 2%;
   }
+
+  #post-content-input{ 
+      display: block;
+      width: 60em; 
+      height: 40em; 
+      border: 1px solid #030303; 
+      padding: 5px; }
+  
   
   .comment-form {
     margin-bottom: 5%;

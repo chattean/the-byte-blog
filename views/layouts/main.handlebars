@@ -16,13 +16,15 @@
         <a href="/">The Byte Blog</a>
       </h1>
       <nav>
+        <a href="/">homepage</a>
         {{#if loggedIn}}
+        <a href="/dashboard">dashboard</a>
         <button id="logout" class="btn-no-style">logout</button>
         {{else}}
         <a href="/login">login</a>
         {{/if}}
-        <a href="/">homepage</a>
-        <a href="/">dashboard</a>
+
+
       </nav>
     </header>
     <main>

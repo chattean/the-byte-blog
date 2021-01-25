@@ -22,6 +22,7 @@ const signUpForm = document.querySelector("#signup-form");
     })
     const user = await res.json();
     console.log({user})
+    document.location.replace('/')
     
  })
 
@@ -43,4 +44,5 @@ const signUpForm = document.querySelector("#signup-form");
         body: JSON.stringify(input)
     })
     const user = await res.json();
+    document.location.replace('/dashboard')
  })
