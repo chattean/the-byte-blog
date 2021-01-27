@@ -14,7 +14,6 @@ async function newFormHandler(event) {
         'Content-Type': 'application/json'
       }
     });
-  
     if (response.ok) {
       document.location.replace('/dashboard');
     } else {
