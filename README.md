@@ -3,6 +3,7 @@
 ## Table of contents:
 1. [User Story](#User-Story)
 1. [Project Description](#Project-Description)
+1. [Screenshot](#screenshot)
 1. [Installation](#Installation-Instructions)
 1. [Usage](#How-To-Use)
 1. [How to Contribute](#How-to-Contribute)
@@ -52,6 +53,8 @@ AS A developer who writes about tech
 I WANT a CMS-style blog site
 SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
+## Screenshot:
+![](./utils/the-byte-blog-screenshot.png)
 ## Installation Instructions:
 find it here: 
 
