@@ -6,6 +6,7 @@ const helpers = require('./utils/helpers')
 require('dotenv').config();
 
 const app = express();
+
 const PORT = process.env.PORT || 3001;
 
 app.use(express.json());
@@ -23,8 +24,8 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 // creating a Session instance
 const sess = {
-  secret: process.env.SESSION_SECRET,
-  cookie: {},
+  secret: "Super Super Duper Secret",
+  cookie: {secure:true, maxAge:24*60*60*1000},
   resave: false,
   saveUninitialized: true,
   store: new SequelizeStore({
