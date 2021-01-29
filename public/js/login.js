@@ -1,10 +1,10 @@
 const loginForm = document.querySelector("#login-form");
 const signUpForm = document.querySelector("#signup-form");
 
-//Sign up form after submiting
+//Sign up form after submitting
 
  signUpForm.addEventListener("submit",async (event) => {
-    event.preventDefault()
+    event.preventDefault();
     const input = {
         username : document.querySelector("#username-signup").value,
         email: document.querySelector("#email-signup").value,
@@ -21,14 +21,13 @@ const signUpForm = document.querySelector("#signup-form");
         body: JSON.stringify(input)
     })
     const user = await res.json();
-    console.log({user})
-    document.location.replace('/')
-    
+    // console.log({user})
+    document.location.replace('/');
  })
 
  // Login form after submitting
  loginForm.addEventListener("submit",async (event) => {
-    event.preventDefault()
+    event.preventDefault();
     const input = {
         email: document.querySelector("#email-login").value,
         password: document.querySelector("#password-login").value
