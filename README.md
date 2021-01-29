@@ -56,7 +56,8 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
 ## Screenshot:
 ![](./utils/the-byte-blog-screenshot.png)
 ## Installation Instructions:
-find it here: 
+find it here: [Heroku link](https://the-byte-blog.herokuapp.com/)
+
 
 ## How To Use
 User will come upon the HomePage that will display all the Post, it will prompt you to login if you try to edit, add comments or try to go to the dashboard. Once logged in all the features are unlocked and user can add, edit and delete posts. User can also go to their dashboard page once logged in. 
