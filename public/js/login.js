@@ -21,7 +21,6 @@ const signUpForm = document.querySelector("#signup-form");
         body: JSON.stringify(input)
     })
     const user = await res.json();
-    // console.log({user})
     document.location.replace('/');
  })
 
